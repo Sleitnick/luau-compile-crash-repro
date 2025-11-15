@@ -19,9 +19,9 @@ const char* EXAMPLE_2 = "function test(v) print(v) end test(Vector2.new(0, 0))";
 int compile_test(lua_State* L, const char* name, const char* source)
 {
 	printf("compiling %s...\n", name);
-	
+
 	lua_CompileOptions opts{};
-	opts.userdataTypes = kUserdataTypes; // This causes a crash with EXAMPLE_1
+	opts.userdataTypes = kUserdataTypes; // This causes a crash with EXAMPLE_2
 	opts.typeInfoLevel = 1;
 	opts.debugLevel = 2;
 	opts.coverageLevel = 0;
