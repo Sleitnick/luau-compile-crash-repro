@@ -1,5 +1,7 @@
 # Luau Compile Crash Reproduction
 
+Reproduces a crash when loading compiled bytecode after enabling NCG with userdata type remapping, specifically when a type with the `userdataTypes` array doesn't appear in the source file.
+
 ## Build
 
 Build with cmake (or run the script below).
