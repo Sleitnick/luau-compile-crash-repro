@@ -10,7 +10,7 @@
 
 static const char* kUserdataTypes[] = {"Vector2", nullptr};
 
-// Example 1: A function takes 'v' and prints it. No type annotations. (This one works)
+// Example 1: A function takes 'v' as a Vector2 and prints it. (This one works)
 const char* EXAMPLE_1 = "function test(v: Vector2) print(v) end test(Vector2.new(0, 0))";
 
 // Example 2: Same as above, but with no type annotation for 'v'. (This crashes)
